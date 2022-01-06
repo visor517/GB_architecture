@@ -22,7 +22,10 @@ class Framework:
         if not path.endswith("/"):
             path = f"{path}/"
 
-        request = {"method": method}
+        request = {
+            "method": method,
+            "url": path,
+        }
 
         if method == "GET":
             data = GetRequests().get_request_params(environ)

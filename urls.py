@@ -8,7 +8,13 @@ def secret_front(request):
 
 
 def other_front(request):
-    request['key'] = 'key'
+    request['header_menu'] = [
+        {'name': "Home", 'link': "/", 'selected': False},
+        {'name': "Examples", 'link': "/examples/", 'selected': False},
+        {'name': "A page", 'link': "/page/", 'selected': False},
+        {'name': "Another page", 'link': "/another_page/", 'selected': False},
+        {'name': "Contact us", 'link': "/contact/", 'selected': False},
+    ]
 
 
 fronts = [secret_front, other_front]

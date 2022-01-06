@@ -401,11 +401,12 @@
             </div>
             <div id="menubar">
                 <ul id="menu">
-                    <li class="selected"><a href="/">Home</a></li>
-                    <li><a href="examples">Examples</a></li>
-                    <li><a href="page">A Page</a></li>
-                    <li><a href="another_page">Another Page</a></li>
-                    <li><a href="contact">Contact Us</a></li>
+                    {% for item in header_menu %}
+                    <li {% if item.link==my_url %}class="selected" {% endif %}><a href="{{ item.link }}">{{
+                            item.name
+                            }}</a>
+                    </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
