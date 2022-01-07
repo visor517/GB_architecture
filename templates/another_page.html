@@ -1,5 +1,17 @@
 {% extends "base.html" %}
 
+{% block style %}
+	{% include "block-style.html" %}
+{% endblock %}
+
+{% block header %}
+	{% include "block-header.html" %}
+{% endblock %}
+
+{% block sidebar %}
+	{% include "block-sidebar.html" %}
+{% endblock %}
+
 {% block content %}
 <h1>Another Page</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et

@@ -1,5 +1,17 @@
 {% extends "base.html" %}
 
+{% block style %}
+	{% include "block-style.html" %}
+{% endblock %}
+
+{% block header %}
+	{% include "block-header.html" %}
+{% endblock %}
+
+{% block sidebar %}
+	{% include "block-sidebar.html" %}
+{% endblock %}
+
 {% block content %}
 <h1>Стартовая страница</h1>
 <p>Форма с post запросом есть на странице Contacts</p>

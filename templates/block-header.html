@@ -1,0 +1,15 @@
+<div id="logo">
+    <div id="logo_text">
+        <h1><a href="/">colour<span class="logo_colour">red</span></a></h1>
+        <h2>Simple. Contemporary. Website Template.</h2>
+    </div>
+</div>
+<div id="menubar">
+    <ul id="menu">
+        {% for item in header_menu %}
+        <li {% if item.link==my_url %}class="selected" {% endif %}>
+            <a href="{{ item.link }}">{{ item.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
